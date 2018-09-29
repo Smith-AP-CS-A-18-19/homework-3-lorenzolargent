@@ -1,5 +1,5 @@
 /*
- * First and Last Names
+ * Lorenzo Largent
  */
 
 public class Homework3 {
@@ -12,17 +12,19 @@ public class Homework3 {
 		value3 = v3;
 	}
 
+
 	/* Call the static grade method in Homework3, passing this object as the
 	 * parameter. Calling a static method looks like calling a method on a
 	 * class (e.g. Math.random())
 	 */
 	public void grade() {
-
+		grade(this);
 	}
 
 	/* Calculate and return the sum of value1, value2, and value3
 	 */
 	public int sum() {
+		return value1 + value2 + value3;
 
 	}
 
@@ -30,6 +32,7 @@ public class Homework3 {
 	 * Hint: the average of numbers can be fractional
 	 */
 	public double average() {
+		return (value1 + value2 + value3)/3;
 
 	}
 
@@ -38,6 +41,9 @@ public class Homework3 {
 	 */
 	 public int productSumDifference() {
 
+return (value1 * value2 * value3)- sum();
+
+
 	 }
 
 	 /* Calculate and return the sum of the squares of value1, value2, and
@@ -45,6 +51,8 @@ public class Homework3 {
 	  */
 	  public int sumSquares() {
 
+
+return (int) (Math.pow(value1, 2) + Math.pow(value2, 2) + Math.pow(value3, 2));
 	  }
 
 	  /* Tests to verify that your solutions work
